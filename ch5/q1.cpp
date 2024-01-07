@@ -13,6 +13,13 @@ using std::vector;
 int main()
 {
      ; // null
+     int ch;
+
+     switch (ch)
+     {
+     case 'a':
+          ++ch; // ch == a 일때 ch에 +1 한다
+     }
 
      // value check
      int blank;
