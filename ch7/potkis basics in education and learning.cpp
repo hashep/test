@@ -54,15 +54,6 @@ int main()
     cout << c << endl;
     cout << "" << endl;
 
-    int numa[3];
-    int *pNumaArray[3] = {numa, numa + 1, numa + 2};
-    int i;
-
-    for (i = 0; i < 3; i++)
-        scanf("%d", pNumaArray[i]);
-
-    printf("입력된 숫자는 각각 %d, %d, %d 입니다.\n", numa[0], numa[1], numa[2]);
-
     // value check
     int blank;
     cin >> blank;
