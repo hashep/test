@@ -24,13 +24,18 @@ using std::vector;
 
 int main()
 {
-    auto f = []
-    { return 42; };
+    size_t v1 = 42; // size_t = int인데 크기가큼
+    auto f = [v1]
+    { return v1; }; // f() = v1 = 42
 
-    cout << f << endl;   // 1
-    cout << *f << endl;  // 1
-    cout << &f << endl;  // 주소
+    cout << f() << endl;
+
+    v1 = 0;
+    auto j = f();
+
     cout << f() << endl; // 42
+    cout << j << endl;   // 42
+    cout << v1 << endl;  // 0
 
     // value check
     int blank;

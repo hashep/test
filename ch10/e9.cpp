@@ -24,13 +24,16 @@ using std::vector;
 
 int main()
 {
-    auto f = []
-    { return 42; };
+    size_t v1 = 42;
+    auto f2 = [&v1]
+    { return v1; };
 
-    cout << f << endl;   // 1
-    cout << *f << endl;  // 1
-    cout << &f << endl;  // 주소
-    cout << f() << endl; // 42
+    cout << f2() << endl; // 42
+
+    v1 = 0;
+    auto j = f2(); // 위에서 f2가 [v1]이 아니라 [&v1]을 불러왔기때문에 42 안불러와짐
+
+    cout << j << endl; // 0
 
     // value check
     int blank;
