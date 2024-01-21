@@ -3,13 +3,16 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <numeric>
 
+using std::accumulate;
 using std::begin;
 using std::cin;
 using std::cout;
 using std::end;
 using std::endl;
 using std::ends;
+using std::fill;
 using std::find;
 using std::flush;
 using std::ifstream;
@@ -20,11 +23,13 @@ using std::vector;
 
 int main()
 {
-    int ia[] = {1, 2, 3, 5};
-    int val = 5;
+    vector<int> a;
+    auto it = back_inserter(a);
 
-    auto result1 = find(begin(ia), end(ia), val);
-    auto result2 = find(ia, ia + 3, val);
+    it = 42;
+
+    cout << a[0] << endl;
+    cout << a[1] << endl;
 
     // value check
     int blank;

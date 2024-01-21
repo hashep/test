@@ -3,7 +3,9 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <numeric>
 
+using std::accumulate;
 using std::begin;
 using std::cin;
 using std::cout;
@@ -20,11 +22,11 @@ using std::vector;
 
 int main()
 {
-    int ia[] = {1, 2, 3, 5};
-    int val = 5;
+    string v[] = {"shit", "fuck", "what"};
+    string ass = "";
+    /* string sum = accumulate(v.begin(), v.end(), ass);
 
-    auto result1 = find(begin(ia), end(ia), val);
-    auto result2 = find(ia, ia + 3, val);
+    cout << sum << endl; */
 
     // value check
     int blank;
