@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <numeric>
 #include <list>
+#include <map>
 
 using std::accumulate;
 using std::begin;
@@ -19,6 +20,8 @@ using std::find;
 using std::flush;
 using std::ifstream;
 using std::list;
+using std::map;
+using std::pair;
 using std::runtime_error;
 using std::size_t;
 using std::string;
@@ -30,4 +33,11 @@ int main()
     // value check
     int blank;
     cin >> blank;
+}
+
+pair<string, int>
+process(vector<string> &v)
+{
+    if (!v.empty())
+        return pair<string, int>();
 }
