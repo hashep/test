@@ -7,6 +7,7 @@
 #include <list>
 #include <map>
 #include <set>
+#include <memory>
 
 using std::accumulate;
 using std::begin;
@@ -25,12 +26,14 @@ using std::map;
 using std::pair;
 using std::runtime_error;
 using std::set;
+using std::shared_ptr;
 using std::size_t;
 using std::string;
 using std::vector;
 
 int main()
 {
+    shared_ptr<string> p1; // 스마트포인터, p1 = string
 
     // value check
     int blank;
