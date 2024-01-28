@@ -31,10 +31,7 @@ using std::size_t;
 using std::string;
 using std::vector;
 
-int main()
+struct shit
 {
-
-    // value check
-    int blank;
-    cin >> blank;
-}
+    shit operator+(a, b);
+};
