@@ -31,11 +31,23 @@ using std::size_t;
 using std::string;
 using std::vector;
 
+template <typename T>
+
+int compare(const T &a, const T &b)
+{
+    if (a < b)
+        return -1;
+    if (b < a)
+        return 1;
+}
+
 int main()
 {
-    int i = 42;
-    int &r = i;
-    /* int &&a = i; */
+    cout << compare(1, 0) << endl;
+    cout << compare(0, 1) << endl;
+
+    vector<int> vec1{1, 2, 3}, vec2{4, 5, 6};
+    cout << compare(vec1, vec2) << endl;
 
     // value check
     int blank;
