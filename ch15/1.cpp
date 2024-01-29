@@ -31,9 +31,13 @@ using std::size_t;
 using std::string;
 using std::vector;
 
-class shit
+int main()
 {
-public:
-    shit &operator++();
-    shit &operator--();
-};
+    int i = 42;
+    int &r = i;
+    /* int &&a = i; */
+
+    // value check
+    int blank;
+    cin >> blank;
+}

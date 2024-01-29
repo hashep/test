@@ -31,9 +31,26 @@ using std::size_t;
 using std::string;
 using std::vector;
 
-class shit
+class Sample1
 {
+    int a;
+
 public:
-    shit &operator++();
-    shit &operator--();
+    Sample1(int n = 0) : a(n) {}
+    Sample1 &operator++()
+    {
+        ++a;
+        return *this;
+    }
+    int meThod() const { return a; };
 };
+
+int main()
+{
+    Sample1 h;
+    cout << (++h).meThod() << endl; // 1 출력
+
+    // value check
+    int blank;
+    cin >> blank;
+}
